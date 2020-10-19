@@ -17,7 +17,6 @@ cd lede
 ```
 
 ```
-bash
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 make menuconfig
@@ -32,7 +31,6 @@ make -j1 V=s
 ```
 
 ```
-bash
 cd lede
 git pull
 ./scripts/feeds update -a && ./scripts/feeds install -a
@@ -42,7 +40,6 @@ make -j$(($(nproc) + 1)) V=s
 ```
 
 ```
-bash
 rm -rf ./tmp && rm -rf .config
 make menuconfig
 make -j$(($(nproc) + 1)) V=s
